@@ -5,6 +5,10 @@
         <h2 class="site-section-heading text-center">Our Programs</h2>
       </div>
     </div>
-    <app-item></app-item>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 mb-2" *ngFor="let program of programs">
+        <app-item [program]="program"></app-item>
+      </div>
+    </div>
   </div>
 </div>
