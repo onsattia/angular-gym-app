@@ -15,7 +15,7 @@
         <div class="row align-items-center">
           <div class="col-2">
             <h2 class="mb-0 site-logo">
-              <a href="index.html">Cross<strong>fits</strong></a>
+              <a routerLink="/home">Cross<strong>fits</strong></a>
             </h2>
           </div>
           <div class="col-10">
@@ -28,27 +28,14 @@
                 </div>
 
                 <ul class="site-menu js-clone-nav d-none d-lg-block">
-                  <li class="has-children">
-                    <a href="program.html">Program</a>
-                    <ul class="dropdown arrow-top">
-                      <li><a href="program.html">Body Building</a></li>
-                      <li><a href="program.html">Morning Energy</a></li>
-                      <li><a href="program.html">Stretching</a></li>
-                      <li class="has-children">
-                        <a href="program.html">Sub Menus</a>
-                        <ul class="dropdown">
-                          <li><a href="program.html">Swimming</a></li>
-                          <li><a href="program.html">Boxing</a></li>
-                          <li><a href="program.html">Running</a></li>
-                          <li><a href="program.html">Jogging</a></li>
-                        </ul>
-                      </li>
-                    </ul>
+                  <li>
+                    <a routerLink="/programs">Our Programs</a>
                   </li>
-                  <li><a href="trainers.html">Our Trainers</a></li>
-                  <li><a href="events.html">News</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li>
+                    <a routerLink="/exercises">Exercises</a>
+                  </li>
+                  <li><a routerLink="/trainers">Our Trainers</a></li>
+                  <li><a routerLink="/contact">Contact</a></li>
                 </ul>
               </div>
             </nav>
