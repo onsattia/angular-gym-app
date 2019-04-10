@@ -1,26 +1,37 @@
 import { BrowserModule } from "@angular/platform-browser";
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
+import { HttpClientModule } from "@angular/common/http";
+import { NgModule } from "@angular/core";
 
 import { routes } from "./shared/config/router.config";
+import { RouterModule } from "@angular/router";
 
 import { AppComponent } from "./app.component";
-import { ProgramsModule } from "./programs/programs.module";
-import { ExercisesModule } from "./exercises/exercises.module";
 import { MainHeaderComponent } from "./shared/component/main-header/main-header.component";
 import { MainFooterComponent } from "./shared/component/main-footer/main-footer.component";
-import { RouterModule } from "@angular/router";
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from "./home/home.component";
+
+import { ProgramsModule } from "./programs/programs.module";
+import { ExercisesModule } from "./exercises/exercises.module";
+import { CoachesModule } from "./coaches/coaches.module";
+
+import { ExercisesService } from "./shared/services/exercises/exercises.service";
 
 @NgModule({
-  declarations: [AppComponent, MainHeaderComponent, MainFooterComponent, HomeComponent],
+  declarations: [
+    AppComponent,
+    MainHeaderComponent,
+    MainFooterComponent,
+    HomeComponent
+  ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     ProgramsModule,
     ExercisesModule,
+    CoachesModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
-  bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  providers: [ExercisesService],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

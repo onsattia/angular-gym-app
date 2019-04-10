@@ -8,6 +8,7 @@ import { Program } from "src/app/shared/models/programs";
 })
 export class ItemComponent implements OnInit {
   @Input() program: Program;
+
   constructor() {}
 
   ngOnInit() {}

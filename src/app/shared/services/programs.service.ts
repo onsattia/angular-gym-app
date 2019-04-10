@@ -57,7 +57,7 @@ export class ProgramsService {
     const programObservable = new Observable(observable => {
       setTimeout(() => {
         observable.next(this.programs);
-      }, 1000);
+      }, 500);
     });
 
     return programObservable;
