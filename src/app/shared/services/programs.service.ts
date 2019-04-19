@@ -62,4 +62,8 @@ export class ProgramsService {
 
     return programObservable;
   }
+
+  canActivate(): boolean {
+    return !(localStorage.getItem("token") === null);
+  }
 }

@@ -1,0 +1,27 @@
+<div class="site-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="site-section-heading text-center">My WOD</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 mb-2" *ngFor="let program of myWods">
+        <div class="card">
+          <img src="{{ program.image }}" alt="Image" class="img-fluid" />
+          <div class="card-body">
+            <h2 class="card-title">{{ program.name }}</h2>
+            <p class="card-text">
+              {{ program.description }}
+            </p>
+            <p>
+              <button class="btn btn-primary text-white px-3">
+                More Details
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

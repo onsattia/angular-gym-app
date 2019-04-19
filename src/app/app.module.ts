@@ -15,6 +15,7 @@ import { ExercisesModule } from "./exercises/exercises.module";
 import { CoachesModule } from "./coaches/coaches.module";
 
 import { ExercisesService } from "./shared/services/exercises/exercises.service";
+import { MySpaceModule } from "./my-space/my-space.module";
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ExercisesService } from "./shared/services/exercises/exercises.service"
     ProgramsModule,
     ExercisesModule,
     CoachesModule,
+    MySpaceModule,
     RouterModule.forRoot(routes)
   ],
   providers: [ExercisesService],

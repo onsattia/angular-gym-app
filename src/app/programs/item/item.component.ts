@@ -12,4 +12,14 @@ export class ItemComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  addToMyWod() {
+    const programs = JSON.parse(localStorage.getItem("programs"));
+    if (programs === null) {
+      localStorage.setItem("programs", JSON.stringify([this.program.id]));
+    } else {
+      programs.push(this.program.id);
+      localStorage.setItem("programs", JSON.stringify(programs));
+    }
+  }
 }

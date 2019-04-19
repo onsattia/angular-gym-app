@@ -3,12 +3,18 @@
   <div class="card-body">
     <h2 class="card-title">{{ program.name }}</h2>
     <p class="card-text">
-      {{ program.description }}
+      {{ program.description | truncate: 40:"..." }}
     </p>
     <p>
-      <a href="#" class="btn btn-primary text-white px-4"
-        ><span class="caption">Learn More</span></a
+      <button
+        (click)="addToMyWod()"
+        class="btn btn-primary text-white px-3 m-1"
       >
+        Take this WOD
+      </button>
+      <button class="btn btn-primary text-white px-3">
+        More Details
+      </button>
     </p>
   </div>
 </div>
