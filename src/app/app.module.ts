@@ -16,13 +16,15 @@ import { CoachesModule } from "./coaches/coaches.module";
 
 import { ExercisesService } from "./shared/services/exercises/exercises.service";
 import { MySpaceModule } from "./my-space/my-space.module";
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainHeaderComponent,
     MainFooterComponent,
-    HomeComponent
+    HomeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

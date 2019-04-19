@@ -6,6 +6,7 @@ import { CoachesListComponent } from "src/app/coaches/coaches-list/coaches-list.
 import { HomeComponent } from "src/app/home/home.component";
 import { MyWodComponent } from "src/app/my-space/my-wod/my-wod.component";
 import { ProgramsService } from "../services/programs.service";
+import { ContactComponent } from "src/app/contact/contact.component";
 
 export const routes: Routes = [
   {
@@ -23,6 +24,10 @@ export const routes: Routes = [
   {
     path: "coaches",
     component: CoachesListComponent
+  },
+  {
+    path: "contact",
+    component: ContactComponent
   },
   {
     path: "my-wod",
