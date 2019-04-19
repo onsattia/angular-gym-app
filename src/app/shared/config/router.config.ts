@@ -9,7 +9,7 @@ import { ProgramsService } from "../services/programs.service";
 
 export const routes: Routes = [
   {
-    path: "programs",
+    path: "wods",
     component: ProgramsListComponent
   },
   {
